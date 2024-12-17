@@ -55,6 +55,32 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* About Section Styles */
+#about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between the image and text */
+}
+
+.profile-photo {
+  flex-shrink: 0; /* Prevent the image from resizing */
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the photo circular */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.profile-content {
+  flex: 1; /* Allow the text section to take the remaining space */
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 /* Education Section Styles */
 #education {
@@ -112,6 +138,14 @@ footer {
 
   .degree {
     padding: 10px;
+    margin-bottom: 15px;
+  }
+    .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
     margin-bottom: 15px;
   }
 
