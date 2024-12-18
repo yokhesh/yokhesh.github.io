@@ -60,6 +60,12 @@ section {
   padding: 20px;
 }
 
+
+#about h2 {
+  text-align: center; /* Centers the heading */
+  margin-bottom: 20px; /* Adds spacing between the heading and content */
+}
+
 .profile {
   display: flex;
   align-items: center;
