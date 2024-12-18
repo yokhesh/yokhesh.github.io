@@ -74,8 +74,8 @@ section {
 
 .profile-photo {
   flex-shrink: 0; /* Prevent the image from resizing */
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
+  width: 250px; /* Adjust size as needed */
+  height: 250px; /* Adjust size as needed */
   border-radius: 50%; /* Makes the photo circular */
   object-fit: cover; /* Ensures the image maintains aspect ratio */
 }
