@@ -122,18 +122,20 @@ section {
   color: #333;
 }
 
-  #skills {
+#skills {
     padding: 20px;
     font-family: Arial, sans-serif;
   }
 
+  /* This ensures that the columns appear side by side */
   .skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex; /* Using flexbox to display items side by side */
+    justify-content: space-between; /* Space between columns */
     gap: 30px;
   }
 
   .skill-category {
+    width: 30%; /* Each skill category takes up 30% of the available width */
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
@@ -190,6 +192,12 @@ footer {
     padding: 10px;
   }
     .skills-container {
-    grid-template-columns: 1fr;
-  }
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;
+    }
+
+    .skill-category {
+      width: 80%; /* On smaller screens, make each section wider */
+      margin-bottom: 20px;
+    }
 }
