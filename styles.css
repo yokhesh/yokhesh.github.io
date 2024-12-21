@@ -122,6 +122,39 @@ section {
   color: #333;
 }
 
+  #skills {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .skill-category {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .skill-category h3 {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-category ul li {
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+
 /* Footer Styles */
 footer {
   text-align: center;
@@ -155,5 +188,8 @@ footer {
 
   #education {
     padding: 10px;
+  }
+    .skills-container {
+    grid-template-columns: 1fr;
   }
 }
